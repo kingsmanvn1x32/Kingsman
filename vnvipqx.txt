@@ -1,0 +1,10 @@
+vmess = 103.161.176.192:80, method=chacha20-ietf-poly1305, password=7c273498-ca73-4375-a209-af51770e9105, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 HN qr limit
+vmess = hn01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 01 Trial
+vmess = hn03.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 03 Gaming
+vmess = hn04.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 04
+vmess = hcm01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 01
+vmess = hcm02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 02 Stable
+vmess = hcm03.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 03 Gaming
+vmess = vn1.hungbe.xyz:80, method=chacha20-ietf-poly1305, password=c66a6591-ea6d-4311-b79a-6cb17001cfc2, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/https://shop4g.hunggbe.click, fast-open=true, udp-relay=true, tag=VnVIP1
+vmess = hcm1pro.genzpn.com:80, method=chacha20-ietf-poly1305, password=933e2feb-a5b4-4747-b9d0-44ec741ef3c7, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=GenzPN Dịch Vụ VPN
+vmess = HCM.duongvansy.store:80, method=chacha20-ietf-poly1305, password=60635814-ce99-4c90-92bd-0491667c53c3, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/Web=dvsdvfb.shop=duongvansy.store, fast-open=true, udp-relay=true, tag=HCM Gameming
