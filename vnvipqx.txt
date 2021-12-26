@@ -1,7 +1,9 @@
+vmess=lamr0ngthjen.tk:80, method=chacha20-ietf-poly1305, password=61da8479-04d5-4699-81f8-575af528c7eb, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 v2ray
 vmess = 103.161.176.192:80, method=chacha20-ietf-poly1305, password=7c273498-ca73-4375-a209-af51770e9105, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 HN qr limit
+vmess = 103.153.254.26:80, method=chacha20-ietf-poly1305, password=a40d34c6-b77c-4648-9210-3e8d2f4226b5, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/opentunnel?user=opentunnel.net-kings, fast-open=true, udp-relay=true, tag=🇻🇳 VN opentunnel.net-kings
 vmess = hn01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 01 Trial
 vmess = hn03.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 03 Gaming
-vmess = hn04.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 04
+vmess = hn04.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 HN 04
 vmess = hcm01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 01
 vmess = hcm02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 02 Stable
 vmess = hcm03.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 03 Gaming
