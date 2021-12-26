@@ -1,0 +1,152 @@
+# + Update 01.06.2021
+# -- Cập nhật chứng chỉ mới
+#
+#Config connect based on filter
+#
+
+[general]
+resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+server_check_url=http://www.qualcomm.cn/generate_204
+dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+udp_whitelist=53, 1024-65535
+profile_img_url=https://raw.githubusercontent.com/tinycarrot/tinycarrot.github.io/master/images/Board_02_endframefree1.png
+
+[dns]
+server=223.5.5.5
+server=119.29.29.29:53
+server=119.28.28.28
+server=114.114.114.114
+server=202.141.176.93
+server=202.141.178.13
+server=117.50.10.10
+server=/*.taobao.com/223.5.5.5
+server=/*.tmall.com/223.5.5.5
+server=/*.alipay.com/223.5.5.5
+server=/*.alicdn.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/*.jd.com/119.28.28.28
+server=/*.qq.com/119.28.28.28
+server=/*.tencent.com/119.28.28.28
+server=/*.weixin.com/119.28.28.28
+server=/*.bilibili.com/119.29.29.29
+server=/hdslb.com/119.29.29.29
+server=/*.163.com/119.29.29.29
+server=/*.126.com/119.29.29.29
+server=/*.126.net/119.29.29.29
+server=/*.127.net/119.29.29.29
+server=/*.netease.com/119.29.29.29
+server=/*.mi.com/119.29.29.29
+server=/*.xiaomi.com/119.29.29.29
+server=1.1.1.1
+server=8.8.8.8
+server=8.8.4.4
+server=45.90.28.0
+
+[policy]
+static=Fake PXX Policy, Chỉ Dành cho VIP, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-samples/apple.PNG
+static=Fake iAP Policy, Tự Động, Tuỳ Chọn, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
+static=Chặn Theo Dõi FB, TẮT, BẬT, img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
+static=Chặn Ads, BẬT, TẮT, img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
+static=Chặn OTA, TẮT, BẬT, img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
+static=Tuỳ Chọn, Fake iAP Server 01, Fake iAP Server 02, Fake iAP Server 03, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
+static=Chỉ Dành cho VIP, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
+available=Tự Động, Fake iAP Server 01, Fake iAP Server 02, Fake iAP Server 03, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+static=BẬT, reject, img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
+static=TẮT, direct, img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Reject.png
+
+[server_remote]
+https://zapterdata.com/api/v1/client/subscribe?token=59378d5760f6964772b11b071bcd54c8, tag=ZAPTERDAT, update-interval=172800, opt-perserfalse, enabled=true
+https://zingfast.vn/api/v1/client/subscribe?token=9e72280012cf3109f9b8c264d7128468, tag=ZING FAST🚀, update-interval=172800, opt-parser=false, enabled=true
+https://shopndt.space/api/v1/client/subscribe?token=45d84ae4df02102a92b848edc4062a43, tag=NDT OFFICIAL DATA, update-interval=172800, opt-parser=false, enabled=true
+http://conf.iapserver.com/remote.php?i=a942z9mqccg5l8cb7mpnd9e46gcb5d795439004535095317, tag=Fake iAP Server, update-interval=172800, opt-parser=false, enabled=true
+
+[filter_remote]
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=NobyDa去广告, enabled=true
+https://raw.githubusercontent.com/limbopro/Profiles/master/limbopro/QuantumultX.list, tag=机场域名, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=国外路线, force-policy=proxy, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=proxy, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内路线, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=运营商劫持及恶意网站, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Advertising.list, tag=去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Unbreak.list, tag=UNBREAK, update-interval=86400, opt-parser=false, enabled=true
+http://conf.iapserver.com/filter.php?i=a942z9mqccg5l8cb7mpnd9e46gcb5d795439004535095317, tag=Fake iAP Filter, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag=🇻🇳hostsVN, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag=🇻🇳hostsVN, force-policy=Chặn Ads, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf, tag=🇻🇳hostsVN-OTA, force-policy=Chặn OTA, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-FB.conf, tag=🇻🇳hostsVN-FB, force-policy=Chặn Theo Dõi FB, enabled=true
+
+[rewrite_remote]
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS.conf, tag=Script, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/YouTube.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=All In One, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumultX-rewrite.conf, tag=🇻🇳hostsVN, enabled=true
+
+[server_local]
+vmess=52.175.51.67:80, method=aes-128-gcm, password=19d42594-c08c-4ceb-e4c4-072fbb12f68b, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/ngocnhicute, fast-open=true, udp-relay=true, tag=🇭🇰 BEO VPS VIP
+vmess=lamr0ngthjen.tk:80, method=chacha20-ietf-poly1305, password=61da8479-04d5-4699-81f8-575af528c7eb, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 v2ray
+vmess = 103.161.176.192:80, method=chacha20-ietf-poly1305, password=7c273498-ca73-4375-a209-af51770e9105, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 HN qr limit
+vmess = 103.153.254.26:80, method=chacha20-ietf-poly1305, password=a40d34c6-b77c-4648-9210-3e8d2f4226b5, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/opentunnel?user=opentunnel.net-kings, fast-open=true, udp-relay=true, tag=🇻🇳 VN opentunnel.net-kings
+vmess = hn01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 01 Trial
+vmess = hn03.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HN 03 Gaming
+vmess = hn04.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 HN 04
+vmess = hcm01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 01
+vmess = hcm02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 02 Stable
+vmess = hcm03.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=HCM 03 Gaming
+vmess = vn1.hungbe.xyz:80, method=chacha20-ietf-poly1305, password=c66a6591-ea6d-4311-b79a-6cb17001cfc2, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/https://shop4g.hunggbe.click, fast-open=true, udp-relay=true, tag=VnVIP1
+vmess = hcm1pro.genzpn.com:80, method=chacha20-ietf-poly1305, password=933e2feb-a5b4-4747-b9d0-44ec741ef3c7, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=GenzPN Dịch Vụ VPN
+vmess = HCM.duongvansy.store:80, method=chacha20-ietf-poly1305, password=60635814-ce99-4c90-92bd-0491667c53c3, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/Web=dvsdvfb.shop=duongvansy.store, fast-open=true, udp-relay=true, tag=HCM Gameming
+vmess = 16.162.255.115:80, method=chacha20-ietf-poly1305, password=afc0817d-e7bb-4023-9a82-ae7e828d4c06, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 HK
+vmess = 16.162.255.115:80, method=chacha20-ietf-poly1305, password=afc0817d-e7bb-4023-9a82-ae7e828d4c06, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 HK Mbi
+vmess = 16.162.255.115:80, method=chacha20-ietf-poly1305, password=afc0817d-e7bb-4023-9a82-ae7e828d4c06, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 HK 2
+vmess=159.223.80.133:80, method=chacha20-poly1305, password=e468bd01-41df-4edd-dd82-488af8293df9, obfs=http, obfs-host=livestream2.tv360.vn, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 Sing VIP http
+vmess = 54.179.36.174:80, method=chacha20-ietf-poly1305, password=7eaee784-6cf8-4a8e-8b61-d0380a1fea2e, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/yeuquynhtruc, fast-open=true, udp-relay=true, tag=🇸🇬 Truccc:3
+vmess = 52.221.234.208:80, method=chacha20-ietf-poly1305, password=1f739782-c3c2-4424-981c-6e2b627c98c8, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 Sing
+vmess = 159.223.80.133:443, method=chacha20-ietf-poly1305, password=a0ea89dd-f5e2-47cd-a6cd-27a55baa728c, fast-open=true, udp-relay=true, tag= Bách VPS Digital Ocean 443
+vmess = 51.79.156.97:80, method=chacha20-ietf-poly1305, password=bc6f3a70-fa54-4ff3-8ac2-2e59b9ee0b9d, obfs=ws, obfs-host=livestream2.tv360.vn, obfs-uri=/JAGOANSSH/, fast-open=true, udp-relay=true, tag=Freee︻┳デ═—
+vmess = 172.104.167.19:80, method=chacha20-ietf-poly1305, password=33d7eb30-c1e1-4a1c-94cd-7bcd4102f3a9, obfs=ws, obfs-host=Livestream2.tv360.vn, obfs-uri=/quoctai, fast-open=true, udp-relay=true, tag=🇸🇬 NVT VPN PLUS
+vmess = 13.213.31.213:80, method=chacha20-ietf-poly1305, password=72145826-d63a-453a-b802-b440376b3666, obfs=ws, obfs-host=livestream2.tv360.vn, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 TRÌNH SIÊU CẤP   HỒ MINH :))
+vmess = 159.223.71.132:80, method=chacha20-ietf-poly1305, password=302131c0-75b6-4a8d-a417-e753c3efe652, fast-open=true, udp-relay=true, tag=<3 anh biên chim tođẹp trai<3
+vmess = 52.221.234.208:80, method=chacha20-ietf-poly1305, password=e7f19d37-222a-49bd-9fbc-35ce885bc0d3, obfs=ws, obfs-host=livestream2.tv360.vn, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 Singapore
+vmess = 54.169.51.135:80, method=chacha20-ietf-poly1305, password=9fbb4da0-4d97-411d-c1a1-591ce051619a, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇹🇷 TRINH
+vmess = sing01u.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=SING 01 Xem Phim
+vmess = sing02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=SING 02 Gaming
+vmess = 13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=13.228.27.114:80
+vmess = 13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 SG Mbi
+vmess = 139.59.118.190:80, method=chacha20-ietf-poly1305, password=7c273498-ca73-4375-a209-af51770e9105, obfs=ws, obfs-host=live.tv360.vn, obfs-uri=/, fast-open=true, udp-relay=true, tag=Sing-3
+vmess = 13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=sg
+vmess = 13.212.53.104:80, method=chacha20-ietf-poly1305, password=1a4de252-1d3f-4cad-bc3b-d8e70825c3ca, fast-open=true, udp-relay=true, tag=VPS AWS SINGAPORE VIP
+vmess = 13.212.53.104:80, method=chacha20-ietf-poly1305, password=1a4de252-1d3f-4cad-bc3b-d8e70825c3ca, fast-open=true, udp-relay=true, tag=Shop Tuấn Anh Sing VPS
+vmess = sing01u.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=SING 01 Xem Phim 2
+vmess = sing02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=SING 02 Gaming 2
+vmess = 13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=13.228.27.114:80 2
+vmess = 13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=sg 2
+vmess = 13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 SG Mbi 2
+vmess = 159.223.56.19:80, method=chacha20-ietf-poly1305, password=a92c46cf-3fa9-434d-9ea3-7e6c7a7504c0, fast-open=true, udp-relay=true, tag=no name
+vmess = us01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇺🇸 US 01
+vmess = 104.25.12.236:443, method=chacha20-ietf-poly1305, password=ad806487-2d26-4636-98b6-ab85cc8521f7, obfs=wss, obfs-host=winter-union-d509.nguyenhuuvuong11122002.workers.dev, obfs-uri=/ngocnhicute, tls13=true, tls-verification=true, fast-open=true, udp-relay=true, tag=🇺🇸 Beo immortal demo4g
+vmess = demo4g.herokuapp.com:443, method=chacha20-ietf-poly1305, password=ad806487-2d26-4636-98b6-ab85cc8521f7, obfs=wss, obfs-host=viettel.akamaized.net, obfs-uri=/ngocnhicute, tls13=true, tls-verification=true, fast-open=true, udp-relay=true, tag=🇺🇸 Beo immortal
+vmess = 159.223.56.19:80, method=chacha20-ietf-poly1305, password=a92c46cf-3fa9-434d-9ea3-7e6c7a7504c0, fast-open=true, udp-relay=true, tag=🇺🇸 Us
+vmess = jp01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇯🇵 Japan
+vmess = jp02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇯🇵 Japan 02
+shadowsocks=example.com:80, method=chacha20, password=795439004535095317, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=VER 3 - 01.06.2021
+shadowsocks=example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=TK MIỄN PHÍ
+shadowsocks=example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=Fake iAP Server TEAM
+shadowsocks=example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=LUÔN CHỌN ICON 3 MÀU ĐỂ FAKE APP
+
+[filter_local]
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 224.0.0.0/24, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+geoip, cn, direct
+final, proxy
+
+[rewrite_local]
+
+[mitm]
+hostname = testapps.videostarapp.com
+passphrase = IAPSERVER2021
+p12 = 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
