@@ -1,0 +1,5 @@
+proxies:
+  - {name: 🇧🇪 BEO VPS VIP, server: 52.175.51.67, port: 80, type: vmess, uuid: 19d42594-c08c-4ceb-e4c4-072fbb12f68b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇭🇰 HK, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇭🇰 HK Mbi, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇭🇰 HK 2, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
