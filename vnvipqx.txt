@@ -1,3 +1,5 @@
+vmess=14.225.255.83:80, method=aes-128-gcm, password=bb48a0ab-2a4c-48a5-9616-43221eb49200, obfs=ws, obfs-host=livestream2.tv360.vn, obfs-uri=/, fast-open=false, udp-relay=false, tag=VN
+vmess=sever5-hn.duongvansy.store:80, method=aes-128-gcm, password=ab8d326d-d954-4979-a315-aab711b6eeb5, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/https://duongvansy.store, fast-open=true, udp-relay=false, tag=DUONGVANSY.STORE 🇻🇳 Hà Nội TEST GAME
 vmess=lamr0ngthjen.tk:80, method=chacha20-ietf-poly1305, password=61da8479-04d5-4699-81f8-575af528c7eb, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 v2ray
 vmess = 103.161.176.192:80, method=chacha20-ietf-poly1305, password=7c273498-ca73-4375-a209-af51770e9105, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇻🇳 HN qr limit
 vmess = 103.153.254.26:80, method=chacha20-ietf-poly1305, password=a40d34c6-b77c-4648-9210-3e8d2f4226b5, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/opentunnel?user=opentunnel.net-kings, fast-open=true, udp-relay=true, tag=🇻🇳 VN opentunnel.net-kings
