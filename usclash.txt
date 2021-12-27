@@ -1,0 +1,5 @@
+proxies:
+  - {name: 🇺🇲 US 01, server: us01.v2raytqt.xyz, port: 80, type: vmess, uuid: b825d168-353c-4928-861e-0da34b8f64ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: Beo immortal demo4g, server: 104.25.12.236, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: winter-union-d509.nguyenhuuvuong11122002.workers.dev}, udp: true}
+  - {name: Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇺🇲 Us, server: 159.223.56.19, port: 80, type: vmess, uuid: a92c46cf-3fa9-434d-9ea3-7e6c7a7504c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
