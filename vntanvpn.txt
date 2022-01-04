@@ -1,0 +1,5 @@
+vmess = 103.82.196.164:80, method=chacha20-ietf-poly1305, password=7783128b-0a45-4e34-a46e-94be208ca1ce, obfs=ws, obfs-host=tanvpn.akamaized.net, obfs-uri=/kvw0870h/, fast-open=false, tag=🇻🇳 VN1-[tanvpn.tk]
+vmess = 103.171.91.239:80, method=chacha20-ietf-poly1305, password=5ec74732-13c4-4e28-aad4-ad4061b1bf40, obfs=ws, obfs-host=tanvpn.akamaized.net, obfs-uri=/kvw0870h/, fast-open=false, tag=🇻🇳 VN2-[tanvpn.tk]
+vmess = 103.171.91.239:80, method=chacha20-ietf-poly1305, password=9b89b9ec-2c65-4acb-8baa-c061450c56b9, obfs=ws, obfs-host=tanvpn.akamaized.net, obfs-uri=/kvw0870h/, fast-open=false, tag=🇻🇳 VN3-[tanvpn.tk]
+vmess = 103.82.24.62:80, method=chacha20-ietf-poly1305, password=983fc41b-60c0-4fee-be3d-1f1a2e5221b8, obfs=ws, obfs-host=tanvpn.akamaized.net, obfs-uri=/kvw0870h/, fast-open=false, tag=🇻🇳 VN4-[tanvpn.tk]
+vmess = hanoi1.duybetaa.asia:80, method=chacha20-ietf-poly1305, password=71192a9b-19c3-4088-9732-51d6a52618e8, obfs=ws, obfs-host=tanvpn.akamaized.net, obfs-uri=/http://duybeta.site, fast-open=false, tag=🇻🇳 VN5-[tanvpn.tk]
