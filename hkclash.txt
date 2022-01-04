@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: BEO VPS VIP, server: 52.175.51.67, port: 80, type: vmess, uuid: 19d42594-c08c-4ceb-e4c4-072fbb12f68b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
+  - {name: BEO VPS VIP, server: 52.175.51.67, port: 80, type: vmess, uuid: 0a26c67b-b76e-4135-c9b2-7d392622ea88, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
   - {name: HK, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
   - {name: HK Mbi, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
   - {name: HK 2, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
