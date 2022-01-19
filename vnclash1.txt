@@ -1,3 +1,3 @@
 proxies:
   - {name: v2ray, server: lamr0ngthjen.tk, port: 80, type: vmess, uuid: 61da8479-04d5-4699-81f8-575af528c7eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
-  - {name: beo4g, server: vps.beo4g.cf, port: 80, type: vmess, uuid: dc7e98f6-9105-4760-ee8a-b3c611274d17, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: tcp, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: beo4g, server: vps.beo4g.cf, port: 80, type: vmess, uuid: dc7e98f6-9105-4760-ee8a-b3c611274d17, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
