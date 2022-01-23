@@ -3,14 +3,14 @@
 ----------------------------------------------------------
 ☑️ Kingsman
 ----------------------------------------------------------
-☑️ Có tích hợp chặn quản cáo 
+☑️ Có tích hợp chặn quản cáo
 @@
 ----------------------------------------------------------
 */
 
 /**
 0️⃣ QuantumultX
-resource_parser_url = https://raw.githubusercontent.com/kingsman9413/qX/main/Kingsman-resource-parser.js
+resource_parser_url = https://beoweb.cf/Kingsman-resource-parser.js
 ⚠️⚠️
 ------------------------------
 */
