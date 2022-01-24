@@ -1,2 +1,2 @@
-vmess = jp01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇯🇵 Japan
-vmess = jp02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇯🇵 Japan 02
+vmess = jp01.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇯🇵 Japan (s)
+vmess = jp02.v2raytqt.xyz:80, method=chacha20-ietf-poly1305, password=b825d168-353c-4928-861e-0da34b8f64ac, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇯🇵 Japan 02 (s)
