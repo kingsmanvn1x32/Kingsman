@@ -1,4 +1,4 @@
-vmess = 104.208.106.196:80, method=chacha20-ietf-poly1305, password=6c8c2636-3c08-4d40-d2af-d4fc46b75482, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 BEO VPS01
+vmess = 104.208.106.196:80, method=chacha20-ietf-poly1305, password=6c8c2636-3c08-4d40-d2af-d4fc46b75482, obfs=http, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 BEO VPS01
 vmess = 16.162.255.115:80, method=chacha20-ietf-poly1305, password=afc0817d-e7bb-4023-9a82-ae7e828d4c06, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 HK
 vmess = 16.162.255.115:80, method=chacha20-ietf-poly1305, password=afc0817d-e7bb-4023-9a82-ae7e828d4c06, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 HK Mbi
 vmess = 16.162.255.115:80, method=chacha20-ietf-poly1305, password=afc0817d-e7bb-4023-9a82-ae7e828d4c06, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇭🇰 HK 2
