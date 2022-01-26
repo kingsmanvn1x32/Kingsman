@@ -1,5 +1,5 @@
 proxies:
-  - {name: BEO VPS01, server: vps.vps4g.cf, port: 80, type: vmess, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: BEO VPS01, server: 104.208.106.196, port: 80, type: vmess, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
   - {name: HK, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
   - {name: HK Mbi, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
   - {name: HK 2, server: 16.162.255.115, port: 80, type: vmess, uuid: afc0817d-e7bb-4023-9a82-ae7e828d4c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: viettel.akamaized.net}, udp: true}
