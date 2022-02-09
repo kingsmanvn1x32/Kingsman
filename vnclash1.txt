@@ -1,3 +1,5 @@
 proxies:
-  - {name: BEO VPS VN 01, server: 157.119.249.61, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
- 
+  - {name: 🇻🇳BEO VPS VN 01, server: 157.119.249.61, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇻🇳BEO VPS VN 01, server: 157.119.249.148, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇻🇳BEO VPS VN 01, server: 157.119.248.118, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
+  - {name: 🇻🇳BEO VPS VN 01, server: 180.93.172.203, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
