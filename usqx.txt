@@ -1,3 +1,2 @@
 vmess = 104.25.12.236:443, method=chacha20-ietf-poly1305, password=ad806487-2d26-4636-98b6-ab85cc8521f7, obfs=wss, obfs-host=winter-union-d509.nguyenhuuvuong11122002.workers.dev, obfs-uri=/ngocnhicute, tls13=true, tls-verification=false, fast-open=true, udp-relay=true, tag=🇺🇸 Beo immortal demo4g
 vmess = demo4g.herokuapp.com:443, method=chacha20-ietf-poly1305, password=ad806487-2d26-4636-98b6-ab85cc8521f7, obfs=wss, obfs-host=viettel.akamaized.net, obfs-uri=/ngocnhicute, tls13=true, tls-verification=true, fast-open=true, udp-relay=true, tag=🇺🇸 Beo immortal
-vmess = 159.223.56.19:80, method=chacha20-ietf-poly1305, password=a92c46cf-3fa9-434d-9ea3-7e6c7a7504c0, fast-open=true, udp-relay=true, tag=🇺🇸 Us
