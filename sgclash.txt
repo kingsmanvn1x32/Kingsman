@@ -1,3 +1,4 @@
 proxies:
   - {name: Sing VIP http, server: 159.223.80.133, port: 80, type: vmess, uuid: e468bd01-41df-4edd-dd82-488af8293df9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: SG Mbi, server: 13.228.27.114, port: 80, type: vmess, uuid: 881dc00d-59e2-4223-bf98-234854616831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
+  - {name: SG, server: 139.180.221.111, port: 80, type: vmess, uuid: 669d5222-f5a9-403b-f581-203d74a4bcf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
