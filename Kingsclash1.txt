@@ -8,7 +8,7 @@ external-controller: '127.0.0.1:9090'
 dns:
     enable: true
     ipv6: false
-    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0]
+    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 1.0.0.1, 8.8.4.4]
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
@@ -24,12 +24,12 @@ proxies:
   - {name: 🇸🇬SG Mbi, server: 13.228.27.114, port: 80, type: vmess, uuid: 881dc00d-59e2-4223-bf98-234854616831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
   - {name: 🇸🇬SG, server: 139.180.221.111, port: 80, type: vmess, uuid: 669d5222-f5a9-403b-f581-203d74a4bcf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
   - {name: 🇺🇸Beo immortal demo4g, server: 104.25.12.236, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: winter-union-d509.nguyenhuuvuong11122002.workers.dev}, udp: true}
-  - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
+  - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, sni: viettel.akamaized.net, ws-path: /ngocnhicute, ws-headers: {Host: viettel.akamaized.net}, udp: true}
 proxy-groups:
     - { name: Kingsman, type: select, proxies: [Auto đổi máy chủ (All),Auto chọn máy chủ (Miền Nam), Auto đổi máy chủ (Miền Bắc), Netflix, 🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal] }
-    - { name: Auto chọn máy chủ (Miền Nam), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://210.245.31.220', interval: 450 }
-    - { name: Auto đổi máy chủ (Miền Bắc), type: fallback, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://www.gstatic.com/generate_204', interval: 300 }
     - { name: Auto đổi máy chủ (All), type: fallback, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal], url: 'http://www.gstatic.com/generate_204', interval: 300 }
+    - { name: Auto chọn máy chủ (Miền Bắc), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://www.gstatic.com/generate_204', interval: 300 }
+    - { name: Auto chọn máy chủ (Miền Nam), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://210.245.31.220', interval: 450 }
     - { name: Netflix, type: select, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04] }
 rules:
     - 'DOMAIN-SUFFIX,connect.facebook.net,REJECT'
