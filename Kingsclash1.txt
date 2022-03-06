@@ -1,6 +1,7 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
+ipv6: true
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
@@ -22,8 +23,8 @@ proxies:
   - {name: 🇭🇰BEO VPS HK 01, server: 104.208.106.196, port: 80, type: vmess, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: viettel.akamaized.net}, udp: true}
   - {name: 🇸🇬SG Mbi, server: 13.228.27.114, port: 80, type: vmess, uuid: 881dc00d-59e2-4223-bf98-234854616831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
   - {name: 🇸🇬SG, server: 139.180.221.111, port: 80, type: vmess, uuid: 669d5222-f5a9-403b-f581-203d74a4bcf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
-  - {name: 🇺🇸Beo immortal demo4g, server: 104.25.12.236, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: winter-union-d509.nguyenhuuvuong11122002.workers.dev}, udp: true}
-  - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
+  - {name: 🇺🇸Beo immortal demo4g, server: 104.25.12.236, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: winter-union-d509.nguyenhuuvuong11122002.workers.dev}, udp: true}
+  - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ngocnhicute, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
 proxy-groups:
     - { name: Kingsman, type: select, proxies: [Auto đổi máy chủ (All),Auto chọn máy chủ (Miền Nam), Auto đổi máy chủ (Miền Bắc), Netflix, 🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal] }
     - { name: Auto chọn máy chủ (Miền Nam), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://210.245.31.220', interval: 450 }
