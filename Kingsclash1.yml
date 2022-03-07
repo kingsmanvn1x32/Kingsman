@@ -51,7 +51,7 @@ rules:
     - 'DOMAIN-KEYWORD,adwords,REJECT'
     - 'DOMAIN-KEYWORD,analysis,REJECT'
     - 'DOMAIN-KEYWORD,analysys,REJECT'
-
+    - 'DOMAIN-KEYWORD,analytics,REJECT'
     - 'DOMAIN-KEYWORD,applovin,REJECT'
     - 'DOMAIN-KEYWORD,appsflyer,REJECT'
     - 'DOMAIN-KEYWORD,clkservice,REJECT'
