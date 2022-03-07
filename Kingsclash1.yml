@@ -32,7 +32,7 @@ proxy-groups:
     - { name: Auto chọn máy chủ (🇻🇳VN), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://www.gstatic.com/generate_204', interval: 300 }
     - { name: Netflix, type: select, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04] }
 rules:
-    - 'DOMAIN-SUFFIX,connect.facebook.net,REJECT'
+
     - 'DOMAIN-KEYWORD,adjust,REJECT'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
     - 'DOMAIN-KEYWORD,admaster,REJECT'
