@@ -1,19 +1,19 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
-ipv6: true
+
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
     enable: true
-    ipv6: true
+    ipv6: false
     default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 208.67.222.222, 185.228.168.9, 76.76.19.19]
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     nameserver: ['https://dns.nextdns.io/659b1f', 'https://cloudflare-dns.com/dns-query']
-    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query']
+    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
     fallback-filter: { geoip: false, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
   - {name: 🇻🇳BEO VPS VN 01, server: 157.119.249.61, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
