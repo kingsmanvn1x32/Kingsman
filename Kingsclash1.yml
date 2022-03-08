@@ -7041,7 +7041,7 @@ rules:
     - 'IP-CIDR,224.0.0.0/4,DIRECT'
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'MATCH,Kingsman'
-    interface-name: Wi-Fi
+interface-name: Wi-Fi
 tun:
   enable: true
   stack: gvisor
