@@ -8,13 +8,21 @@ external-controller: '127.0.0.1:9090'
 dns:
     enable: true
     ipv6: true
-    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 1.0.0.1, 8.8.4.4, 114.114.114.114, 223.5.5.5, 119.28.28.28]
+    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 208.67.222.222, 185.228.168.9, 76.76.19.19]
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: ['https://dns.nextdns.io/659b1f', 'https://cloudflare-dns.com/dns-query', https://1.1.1.1/dns-query]
+    nameserver: ['https://dns.nextdns.io/659b1f', 'https://cloudflare-dns.com/dns-query', 'https://1.1.1.1/dns-query']
     fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
     fallback-filter: { geoip: false, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+interface-name: Wi-Fi
+tun:
+  enable: true
+  stack: gvisor
+  auto-route: true
+  # auto-detect-interface: true
+  dns-hijack:
+    - 198.18.0.2:53
 proxies:
   - {name: 🇻🇳BEO VPS VN 01, server: 157.119.249.61, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
   - {name: 🇻🇳BEO VPS VN 02, server: 157.119.249.148, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
@@ -27,12 +35,11 @@ proxies:
   - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ngocnhicute, headers: {Host: viettel.akamaized.net}}, udp: true}
 proxy-groups:
     - { name: Kingsman, type: select, proxies: [Auto chọn máy chủ (All), Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), Auto chọn máy chủ (🇻🇳VN), Netflix, 🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal] }
-    - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal], url: 'http://www.gstatic.com/generate_204', interval: 300 }
-    - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01], url: 'http://www.gstatic.com/generate_204', interval: 300 }
-    - { name: Auto chọn máy chủ (🇻🇳VN), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://www.gstatic.com/generate_204', interval: 300 }
+    - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10}
+    - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10}
+    - { name: Auto chọn máy chủ (🇻🇳VN), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10}
     - { name: Netflix, type: select, proxies: [🇻🇳BEO VPS VN 01, 🇻🇳BEO VPS VN 02, 🇻🇳BEO VPS VN 03, 🇻🇳BEO VPS VN 04] }
 rules:
-
     - 'DOMAIN-KEYWORD,adjust,REJECT'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
     - 'DOMAIN-KEYWORD,admaster,REJECT'
@@ -7046,3 +7053,4 @@ rules:
     - 'IP-CIDR,224.0.0.0/4,DIRECT'
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'MATCH,Kingsman'
+    
