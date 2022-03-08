@@ -12,8 +12,8 @@ dns:
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: ['https://dns.nextdns.io/659b1f', 'https://cloudflare-dns.com/dns-query', 'https://1.1.1.1/dns-query']
-    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
+    nameserver: ['https://dns.nextdns.io/659b1f', 'https://cloudflare-dns.com/dns-query']
+    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query']
     fallback-filter: { geoip: false, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
   - {name: 🇻🇳BEO VPS VN 01, server: 157.119.249.61, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
