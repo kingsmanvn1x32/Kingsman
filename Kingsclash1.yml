@@ -24,8 +24,8 @@ proxies:
   - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ngocnhicute, headers: {Host: viettel.akamaized.net}}, udp: true}
 proxy-groups:
     - { name: Kingsman, type: select, proxies: [Auto chọn máy chủ (All), Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), 🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal] }
-    - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal], url: 'http://www.gstatic.com/generate_204', interval: 450, tolerance: 10 }
-    - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01], url: 'http://www.gstatic.com/generate_204', interval: 450, tolerance: 10 }
+    - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal], url: 'http://210.245.31.220', interval: 450 }
+    - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01], url: 'http://210.245.31.220', interval: 450 }
     - { name: Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
 rules:
     - 'DOMAIN-KEYWORD,adjust,REJECT'
