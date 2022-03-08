@@ -7042,10 +7042,3 @@ rules:
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'MATCH,Kingsman'
 interface-name: Wi-Fi
-tun:
-  enable: true
-  stack: gvisor
-  auto-route: true
-  # auto-detect-interface: true
-  dns-hijack:
-    - 198.18.0.2:53
