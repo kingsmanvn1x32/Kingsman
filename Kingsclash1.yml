@@ -1,14 +1,14 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
-
+ipv6:true
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 dns:
     enable: true
-    ipv6: false
-    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 208.67.222.222, 185.228.168.9, 76.76.19.19]
+    ipv6: true
+    default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 208.67.222.222, 185.228.168.9, 76.76.19.19, 119.29.29.29]
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
@@ -20,13 +20,20 @@ proxies:
   - {name: 🇭🇰BEO VPS HK 01, server: 104.208.106.196, port: 80, type: vmess, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
   - {name: 🇸🇬SG Mbi, server: 13.228.27.114, port: 80, type: vmess, uuid: 881dc00d-59e2-4223-bf98-234854616831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
   - {name: 🇸🇬SG, server: 139.180.221.111, port: 80, type: vmess, uuid: 669d5222-f5a9-403b-f581-203d74a4bcf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
-  - {name: 🇺🇸Beo immortal demo4g, server: 104.25.12.236, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, sni: winter-union-d509.nguyenhuuvuong11122002.workers.dev, network: ws, ws-opts: {path: /ngocnhicute, headers: {Host: winter-union-d509.nguyenhuuvuong11122002.workers.dev}}, udp: true}
-  - {name: 🇺🇸Beo immortal, server: demo4g.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ngocnhicute, headers: {Host: viettel.akamaized.net}}, udp: true}
+  - {name: 🇮🇪BEO IE WIFI 01 KINGSMAN1112, server: 104.18.90.4, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, sni: green-shadow-598.nguyenhuuvuong11122002.workers.dev, network: ws, ws-opts: {path: /ray, headers: {Host: green-shadow-598.nguyenhuuvuong11122002.workers.dev}}, udp: true}
+  - {name: 🇮🇪BEO IE 02 LEANHTRANG, server: kings-ie-02.herokuapp.com, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, sni: viettel.akamaized.net, network: ws, udp: true}
+  - {name: 🇺🇸BEO US WIFI 01 KINGSMAN9413, server: 104.19.62.119, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, sni: broken-snow-9bc0.nhv111202.workers.dev, network: ws, ws-opts: {path: /ray, headers: {Host: broken-snow-9bc0.nhv111202.workers.dev}}, udp: true}
+  - {name: 🇺🇸BEO US 01, server: us-kings-01.herokuapp.com, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, sni: viettel.akamaized.net, network: ws, udp: true}
 proxy-groups:
-    - { name: Kingsman, type: select, proxies: [Auto chọn máy chủ (All), Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), 🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal] }
-    - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇺🇸Beo immortal demo4g, 🇺🇸Beo immortal], url: 'http://210.245.31.220', interval: 450 }
+    - { name: Kingsman, type: select, proxies: [Auto chọn máy chủ (All), Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), 🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇮🇪BEO IE WIFI 01 KINGSMAN1112, 🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US WIFI 01 KINGSMAN9413, 🇺🇸BEO US 01] }
+    - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG, 🇮🇪BEO IE WIFI 01 KINGSMAN1112, 🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US WIFI 01 KINGSMAN9413, BEO US 01], url: 'http://210.245.31.220', interval: 450,  tolerance: 10 }
+    - { name: Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE + 🇺🇸US), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US 01], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
     - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01], url: 'http://210.245.31.220', interval: 450 }
-    - { name: Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
+    - { name: Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG], url: 'http://www.gstatic.com/generate_204', interval: 450, tolerance: 10 }
+    - { name: Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE), type: url-test, proxies: [🇭🇰BEO VPS HK 01, 🇮🇪BEO IE 02 LEANHTRANG], url: 'http://210.245.31.220', interval: 300,  tolerance: 10 }
+    - { name: Auto đổi máy chủ (🇭🇰HK + 🇺🇸US), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇺🇸BEO US 01], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
+    - { name: Auto đổi máy chủ (🇮🇪IE + 🇺🇸US), type: url-test, proxies: [🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US 01], url: 'http://210.245.31.220', interval: 450,  tolerance: 10 }
+    - { name: Auto đổi máy chủ (WiFi🌐), type: fallback, proxies: [🇮🇪BEO IE WIFI 01 KINGSMAN1112, 🇺🇸BEO US WIFI 01 KINGSMAN9413], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
 rules:
     - 'DOMAIN-KEYWORD,adjust,REJECT'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
