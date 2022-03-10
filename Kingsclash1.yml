@@ -30,9 +30,9 @@ proxy-groups:
     - { name: Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE + 🇺🇸US), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US 01], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
     - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇻🇳BEO VPS VN 01, 🇭🇰BEO VPS HK 01], url: 'http://210.245.31.220', interval: 450 }
     - { name: Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇸🇬SG Mbi, 🇸🇬SG], url: 'http://www.gstatic.com/generate_204', interval: 450, tolerance: 10 }
-    - { name: Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE), type: url-test, proxies: [🇭🇰BEO VPS HK 01, 🇮🇪BEO IE 02 LEANHTRANG], url: 'http://210.245.31.220', interval: 300,  tolerance: 10 }
+    - { name: Auto chọn máy chủ (🇭🇰HK + 🇮🇪IE), type: url-test, proxies: [🇭🇰BEO VPS HK 01, 🇮🇪BEO IE 02 LEANHTRANG], url: 'http://210.245.31.220', interval: 300,  tolerance: 10 }
     - { name: Auto đổi máy chủ (🇭🇰HK + 🇺🇸US), type: fallback, proxies: [🇭🇰BEO VPS HK 01, 🇺🇸BEO US 01], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
-    - { name: Auto đổi máy chủ (🇮🇪IE + 🇺🇸US), type: url-test, proxies: [🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US 01], url: 'http://210.245.31.220', interval: 450,  tolerance: 10 }
+    - { name: Auto chọn máy chủ (🇮🇪IE + 🇺🇸US), type: url-test, proxies: [🇮🇪BEO IE 02 LEANHTRANG, 🇺🇸BEO US 01], url: 'http://210.245.31.220', interval: 450,  tolerance: 10 }
     - { name: Auto đổi máy chủ (WiFi🌐), type: fallback, proxies: [🇮🇪BEO IE WIFI 01 KINGSMAN1112, 🇺🇸BEO US WIFI 01 KINGSMAN9413], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
 rules:
     - 'DOMAIN-KEYWORD,adjust,REJECT'
