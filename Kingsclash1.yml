@@ -7,6 +7,7 @@ external-controller: '127.0.0.1:9090'
 dns:
     enable: true
     ipv6: false
+
     default-nameserver: [1.1.1.1, 8.8.8.8, 9.9.9.9, 45.90.28.0, 45.90.30.0, 208.67.222.222, 185.228.168.9, 76.76.19.19, 119.29.29.29]
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
@@ -15,7 +16,8 @@ dns:
     fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
     fallback-filter: { geoip: false, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - {name: 🇭🇰KINGS HK 01, server: 104.208.106.196, port: 80, type: vmess, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
+    - {name: 🇭🇰KINGS HK 01, server: 104.208.106.196, port: 80, type: vmess, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-host: viettel.akamaized.net, udp: true}
+    - {name: '🇭🇰KINGS HK [TLS]', type: vmess, server: 104.208.106.196, port: 443, uuid: 6c8c2636-3c08-4d40-d2af-d4fc46b75482, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
     - {name: 🇸🇬KINGS SG 01, server: 13.228.27.114, port: 80, type: vmess, uuid: 881dc00d-59e2-4223-bf98-234854616831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
     - {name: 🇮🇪KINGS IE WIFI 01 KINGSMAN1112, server: 104.18.90.4, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, sni: green-shadow-598a.nguyenhuuvuong11122002.workers.dev, network: ws, ws-opts: {path: /ray, headers: {Host: green-shadow-598a.nguyenhuuvuong11122002.workers.dev}}, udp: true}
     - {name: 🇮🇪KINGS IE 02 LEANHTRANG, server: kings-ie-02.herokuapp.com, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, sni: viettel.akamaized.net, network: ws, udp: true}
@@ -23,7 +25,7 @@ proxies:
     - {name: 🇺🇸KINGS US 01, server: us-kings-01.herokuapp.com, port: 443, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, sni: viettel.akamaized.net, network: ws, udp: true}
     - {name: 🇻🇳KINGS VN 01, server: 157.119.249.61, port: 80, type: vmess, uuid: e40d2888-03f6-4859-e84d-a743db763d52, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: viettel.akamaized.net}}, udp: true}
 proxy-groups:
-    - { name: KINGSMAN, type: select, proxies: [Auto chọn máy chủ (All), Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE + 🇺🇸US), Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), Auto chọn máy chủ (🇭🇰HK + 🇮🇪IE), Auto đổi máy chủ (🇭🇰HK + 🇺🇸US), Auto chọn máy chủ (🇮🇪IE + 🇺🇸US), Auto đổi máy chủ (WiFi🌐), 🇭🇰KINGS HK 01, 🇸🇬KINGS SG 01, 🇮🇪KINGS IE WIFI 01 KINGSMAN1112, 🇮🇪KINGS IE 02 LEANHTRANG, 🇺🇸KINGS US WIFI 01 KINGSMAN9413, 🇺🇸KINGS US 01] }
+    - { name: KINGSMAN, type: select, proxies: [Auto chọn máy chủ (All), Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE + 🇺🇸US), Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), Auto đổi máy chủ (🇭🇰HK + 🇸🇬SG), Auto chọn máy chủ (🇭🇰HK + 🇮🇪IE), Auto đổi máy chủ (🇭🇰HK + 🇺🇸US), Auto chọn máy chủ (🇮🇪IE + 🇺🇸US), Auto đổi máy chủ (WiFi🌐), 🇭🇰KINGS HK 01, '🇭🇰KINGS HK [TLS]', 🇸🇬KINGS SG 01, 🇮🇪KINGS IE WIFI 01 KINGSMAN1112, 🇮🇪KINGS IE 02 LEANHTRANG, 🇺🇸KINGS US WIFI 01 KINGSMAN9413, 🇺🇸KINGS US 01] }
     - { name: Auto chọn máy chủ (All), type: url-test, proxies: [🇭🇰KINGS HK 01, 🇸🇬KINGS SG 01, 🇮🇪KINGS IE WIFI 01 KINGSMAN1112, 🇮🇪KINGS IE 02 LEANHTRANG, 🇺🇸KINGS US WIFI 01 KINGSMAN9413, 🇺🇸KINGS US 01], url: 'http://210.245.31.220', interval: 450,  tolerance: 10 }
     - { name: Auto đổi máy chủ (🇭🇰HK + 🇮🇪IE + 🇺🇸US), type: fallback, proxies: [🇭🇰KINGS HK 01, 🇮🇪KINGS IE 02 LEANHTRANG, 🇺🇸KINGS US 01], url: 'http://www.gstatic.com/generate_204', interval: 300, tolerance: 10 }
     - { name: Auto chọn máy chủ (🇻🇳VN + 🇭🇰HK), type: url-test, proxies: [🇭🇰KINGS HK 01], url: 'http://210.245.31.220', interval: 450 }
