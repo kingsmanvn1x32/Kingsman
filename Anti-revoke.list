@@ -1,5 +1,4 @@
 HOST-SUFFIX,ocsp.apple.com,REJECT
-HOST-SUFFIX,ocsp.digicert.com,REJECT
 HOST-SUFFIX,ocsp.usertrust.com,REJECT
 HOST-SUFFIX,ocsp.g.aaplimg.com,REJECT
 HOST-SUFFIX,ocsp.int-x3.letsencrypt.org,REJECT
