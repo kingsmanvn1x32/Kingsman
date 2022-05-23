@@ -6,7 +6,7 @@
 
 {"name": "Facebook Meta",
 "bundleIdentifier": "com.facebook.Facebook",
-"version": "364.0",
+"version": "V364.0",
 "downloadURL": "https://mega.nz/file/jQYGQBiR#57htWHbpYm7OfiY96LrHtC_P_yB1I2lPw46t0ZXVRTk",
 "iconURL": "https://kingsmanvn.cf/Facebook/fb.png",
 "versionDescription": "Xóa bản gốc của Appstore trước khi cài Facebook Wolf",
@@ -15,7 +15,7 @@
 
 {"name": "Facebook Meta 2",
 "bundleIdentifier": "com.facebook.Facebook.Kingsmanvn",
-"version": "364.0",
+"version": "V364.0",
 "downloadURL": "https://mega.nz/file/LAxW1Qga#D-tBsnmLa5ZGmDID98PbhvNlo3SrHKZHKdsw3KvWD8U",
 "iconURL": "https://kingsmanvn.cf/Facebook/fb2.png",
 "versionDescription": "Bản Facebook Wolf chạy song song",
@@ -24,7 +24,7 @@
 
 {"name": "Messenger Meta",
 "bundleIdentifier": "com.facebook.Messenger",
-"version": "358.0",
+"version": "V358.0",
 "downloadURL": "https://mega.nz/file/aQpQAL7Y#MlF8IUDc7tTo3OfIKhqUkBCZ90-8DQaAIAUY7zcR08U",
 "iconURL": "https://kingsmanvn.cf/Messenger/mess.png",
 "versionDescription": "Xóa bản gốc của Appstore trước khi cài Messenger Wolf",
@@ -33,7 +33,7 @@
 
 {"name": "Messenger Meta 2",
 "bundleIdentifier": "com.facebook.Messenger.Kingsmanvn",
-"version": "358.0",
+"version": "V358.0",
 "downloadURL": "https://mega.nz/file/HIwC1SST#0vo5MU4NZciwk-hLUWUJgGvRqK4ywNk6rw7u_F_9jl4",
 "iconURL": "https://kingsmanvn.cf/Messenger/mess1.png",
 "versionDescription": "Bản Messenger Wolf chạy song song",
@@ -42,7 +42,7 @@
 
 {"name": "YouTube",
 "bundleIdentifier": "com.google.ios.youtube",
-"version": "17.15.2-5.3.9",
+"version": "V17.15.2-5.3.9",
 "downloadURL": "https://mega.nz/file/LRxiTYCY#9M8o1ZzUuHCShRi35pucx283fZ6WpyMdKTt1wzK_mnU",
 "iconURL": "https://kingsmanvn.cf/CercubePlusLegacy/cercube.png",
 "versionDescription": "Xóa bản gốc của Appstore trước khi cài Cercube for YouTube (IOS12 and later)",
@@ -51,7 +51,7 @@
 
 {"name": "YouTube 2",
 "bundleIdentifier": "com.google.ios.youtube.Kingsmanvn",
-"version": "17.15.2-5.3.9",
+"version": "V17.15.2-5.3.9",
 "downloadURL": "https://mega.nz/file/LRxiTYCY#9M8o1ZzUuHCShRi35pucx283fZ6WpyMdKTt1wzK_mnU",
 "iconURL": "https://kingsmanvn.cf/CercubePlusLegacy/cercube.png",
 "versionDescription": "Bản Cercube for YouTube (IOS12 and later) song song",
@@ -60,7 +60,7 @@
 
 {"name": "Instagram",
 "bundleIdentifier": "com.burbn.instagram",
-"version": "229.0",
+"version": "V229.0",
 "downloadURL": "https://mega.nz/file/edw1XD4S#UU7v3yvm28H6uDnsjs4uyqRrR5adgO6TPMR7k4htEy4",
 "iconURL": "https://kingsmanvn.cf/RocketforInstagram/instagram.png",
 "versionDescription": "Xóa bản gốc của Appstore trước khi cài Rocket for Instagram",
@@ -69,7 +69,7 @@
 
 {"name": "Instagram 2",
 "bundleIdentifier": "com.burbn.instagram.Kingsmanvn",
-"version": "229.0",
+"version": "V229.0",
 "downloadURL": "https://mega.nz/file/edw1XD4S#UU7v3yvm28H6uDnsjs4uyqRrR5adgO6TPMR7k4htEy4",
 "iconURL": "https://kingsmanvn.cf/RocketforInstagram/instagram.png",
 "versionDescription": "Bản Rocket for Instagram chạy song song",
