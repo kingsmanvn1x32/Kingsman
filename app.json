@@ -75,5 +75,24 @@
 "versionDescription": "Bản Rocket for Instagram chạy song song",
 "localizedDescription": "Bản Rocket for Instagram chạy song song",
 "size": 92861890},
+
+{"name": "iSTB",
+"bundleIdentifier": "com.na.istb.Kingsmanvn",
+"version": "1.23.5",
+"downloadURL": "https://mega.nz/file/LJwGXByY#TnvJIYohrV2830Lcndhd9pp-ntHlaibyndL9ur0KDaI",
+"iconURL": "https://kingsmanvn.cf/iSTB/istb.png",
+"versionDescription": "Bản iSTB Pro có thể chạy song song",
+"localizedDescription": "Bản iSTB Pro có thể chạy song song",
+"size": 42331013},
+
+{"name": "Play Diary",
+"bundleIdentifier": "com.g0ky.hdo",
+"version": "1.1.0",
+"downloadURL": "https://kingsmanvn.cf/HDO/Play%20Diary_1.1.0_1646830256.ipa",
+"iconURL": "https://kingsmanvn.cf/HDO/hdo.png",
+"versionDescription": "HDO V1.1.0",
+"localizedDescription": "HDO V1.1.0",
+"size": 9122611},
+
 	]
 }
