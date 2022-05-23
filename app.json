@@ -1,12 +1,15 @@
 {
 	"name": "KingsmanvnStore",
+	"identifier": "kingsmanvn.cf",
+	"sourceURL": "https://kingsmanvn.cf/apps.json",
 	"apps": [
 
 {"name": "Facebook Meta",
 "bundleIdentifier": "com.facebook.Facebook",
 "version": "364.0",
 "downloadURL": "https://mega.nz/file/jQYGQBiR#57htWHbpYm7OfiY96LrHtC_P_yB1I2lPw46t0ZXVRTk",
-"iconURL": "https://mega.nz/file/SBpkiDiC#sFUcS2_TrD09usPdYO8eL-bnVNJgNTsy8fEwFalkt9g",
-"versionDescription": "Xoa ban goc cua Appstore truoc khi cai",
+"iconURL": "https://kingsmanvn.cf/Facebook/fb1.png",
+"versionDescription": "Xóa bản gốc của Appstore trước khi cài Facebook Wolf",
+"localizedDescription": "Facebook Wolf V364.0",
 "size": 132361748}]
 }
