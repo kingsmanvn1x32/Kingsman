@@ -1,4 +1,4 @@
-{
+Q{
 	"name": "KingsmanvnStore",
 	"identifier": "kingsmanvn.cf",
 	"sourceURL": "https://kingsmanvn.cf/apps.json",
@@ -116,7 +116,7 @@
 "bundleIdentifier": "com.xd.mbp31",
 "version": "10.8",
 "downloadURL": "https://mega.nz/file/zFgWSJAQ#92YOmMTWZlDI6omHs5Bc-SV5JkD3PxBAsQ3n6F-A4UI",
-"iconURL": "https://kingsmanvn.cf/MovieBoxPro/movieboxpro.png",
+"iconURL": "https://kingsmanvn.cf/MovieBoxPro/moviebox.png",
 "versionDescription": "MovieBox Pro v10.8",
 "localizedDescription": "MovieBox Pro v10.8",
 "size": 58594426},
@@ -125,7 +125,7 @@
 "bundleIdentifier": "com.risingcabbage.enhancefox",
 "version": "5.1.3",
 "downloadURL": "https://mega.nz/file/LVpiRJBY#Z33NAp52siP1tZb1Ihpt0-H3tDIwHOO-W_iuIA1oZY4",
-"iconURL": "https://kingsmanvn.cf/EnhanceBox/enhanceBox.png",
+"iconURL": "https://kingsmanvn.cf/EnhanceBox/enhancebox.png",
 "versionDescription": "EnhanceBox v5.1.3",
 "localizedDescription": "EnhanceBox v5.1.3",
 "size": 159236751},
