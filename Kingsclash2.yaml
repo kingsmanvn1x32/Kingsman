@@ -38,7 +38,7 @@ proxy-groups:
     - { name: 🔯Auto chuyển đổi dự phòng (All), type: fallback, proxies: [🇻🇳HCSAVN HN, 🇻🇳FBIOSFDK HN, 🇸🇬Changshininc4G, 🇸🇬 𝐒𝐆 02], url: 'http://www.gstatic.com/generate_204', interval: 450}
     - { name: 🔯Auto chuyển đổi dự phòng (🇻🇳VN), type: fallback, proxies: [🇻🇳HCSAVN HN, 🇻🇳FBIOSFDK HN], url: 'http://www.gstatic.com/generate_204', interval: 450}
     - { name: 🔯Auto chuyển đổi dự phòng (🇸🇬SG), type: fallback, proxies: [🇸🇬Changshininc4G, 🇸🇬 𝐒𝐆 02], url: 'http://www.gstatic.com/generate_204', interval: 450}
- rule-providers:
+rule-providers:
     Streaming: { type: http, behavior: classical, path: ./RuleSet/StreamingMedia/Streaming.yaml, url: 'https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml', interval: 86400}
     Global: { type: http, behavior: classical, path: ./RuleSet/Global.yaml, url: 'https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml', interval: 86400}
     hostsVN: { type: http, behavior: domain, url: 'https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-clash-rule.yaml', path: ./ruleset/hostsVN-clash-rule.yaml, interval: 86400 }
