@@ -4,6 +4,14 @@
 	"sourceURL": "https://kingsmanvn.cf/apps.json",
 	"apps": [
 
+{"name": "Gunfire Reborn",
+"version": "1.0.9",
+"downloadURL": "https://dl.dropboxusercontent.com/s/bi49qofyurf8f5o/Gunfire%20Reborn%20v1.0.9.ipa?dl=0",
+"iconURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/gunfirereborn.png",
+"versionDescription": "Gunfire Reborn v1.0.9",
+"localizedDescription": "Gunfire Reborn v1.0.9",
+"size": 10066329},
+
 {"name": "Facebook Meta",
 "bundleIdentifier": "com.facebook.Facebook",
 "version": "364.0",
