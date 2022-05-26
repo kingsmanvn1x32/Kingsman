@@ -1,4 +1,4 @@
-vmess=54.179.169.1:443, method=chacha20-ietf-poly1305, password=d6176a55-aac8-42e7-dfa4-ddaa50a7e62e, obfs=http, obfs-host=autuvti.tv360.vn, obfs-uri=/, fast-open=false, udp-relay=false, aead=true, tag=🇸🇬Changshininc4G
 vmess=13.228.29.252:80, method=chacha20-ietf-poly1305, password=c71993aa-6290-498a-efda-e3f9aaec3357, obfs=http, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, aead=true, tag=🇸🇬 𝐒𝐆 02
 vmess=103.166.183.226:80, method=chacha20-ietf-poly1305, password=c3198362-a719-479f-f6e3-51c31dc5558f, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, aead=true, tag=🇻🇳HCSAVN HN
 vmess=fwb.hcsavn.com:80, method=chacha20-ietf-poly1305, password=c3198362-a719-479f-f6e3-51c31dc5558f, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, aead=true, tag=🇻🇳FBIOSFDK HN
+vmess=198.252.101.4:80, method=chacha20-ietf-poly1305, password=73088147-ff8c-4ba8-9805-d9c6886abf60, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=false, aead=true, tag=🇸🇬FBIOSFDK SG
