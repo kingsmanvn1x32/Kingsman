@@ -43,7 +43,7 @@
 {"name": "YouTube",
 "bundleIdentifier": "com.google.ios.youtube",
 "version": "17.15.2-5.3.9",
-"downloadURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/blob/raw/CercubePlusLegacy_17.20.3_.5.3.9.ipa",
+"downloadURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/CercubePlusLegacy_17.20.3_.5.3.9.ipa",
 "iconURL": "https://kingsmanvn.cf/Image/CercubePlusLegacy/cercube.png",
 "versionDescription": "Xóa bản gốc của Appstore trước khi cài Cercube for YouTube (IOS12)",
 "localizedDescription": "Xóa bản gốc của Appstore trước khi cài Cercube for YouTube (IOS12)",
