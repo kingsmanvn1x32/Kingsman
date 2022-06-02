@@ -1,3 +1,0 @@
-vmess=vn2.project4gyuna.pw:80, method=chacha20-ietf-poly1305, password=a38c4e75-ccf9-40c7-a092-6a33a8daf2ba, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/project4gyuna.pw, fast-open=true, udp-relay=true, aead=true, tag=🇻🇳 HÀ NỘI GAMING 2
-vmess=hkvip.project4gyuna.pw:80, method=chacha20-ietf-poly1305, password=a38c4e75-ccf9-40c7-a092-6a33a8daf2ba, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/project4gyuna.pw, fast-open=true, udp-relay=true, aead=true, tag=🇭🇰 HONG KONG Vip
-vmess=au.project4gyuna.pw:80, method=chacha20-ietf-poly1305, password=a38c4e75-ccf9-40c7-a092-6a33a8daf2ba, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/project4gyuna.pw, fast-open=true, udp-relay=true, aead=true, tag=🇦🇹 Australia Vip
