@@ -1,4 +1,0 @@
-proxies:
-  - {name: v2ray, server: lamr0ngthjen.tk, port: 80, type: vmess, uuid: 61da8479-04d5-4699-81f8-575af528c7eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
-  - {name: beo4g, server: vps.beo4g.cf, port: 80, type: vmess, uuid: dc7e98f6-9105-4760-ee8a-b3c611274d17, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-path: /, http-headers: {Host: livestream2.tv360.vn}, udp: true}
-  - {name: Da Nang, server: 202.158.247.103, port: 80, type: vmess, uuid: 239249ff-832d-49e4-998e-53b16f2a5be4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
