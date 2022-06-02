@@ -1,2 +1,0 @@
-vmess=159.223.80.133:80, method=chacha20-poly1305, password=e468bd01-41df-4edd-dd82-488af8293df9, obfs=http, obfs-host=livestream2.tv360.vn, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 Sing VIP http
-vmess=13.228.27.114:80, method=chacha20-ietf-poly1305, password=881dc00d-59e2-4223-bf98-234854616831, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, tag=🇸🇬 SG Mbi
