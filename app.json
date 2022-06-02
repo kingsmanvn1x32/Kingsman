@@ -9,8 +9,8 @@
 "version": "364.0",
 "downloadURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/Facebook_Meta_364.0_1654102115.ipa",
 "iconURL": "https://kingsmanvn.cf/Image/Facebook/fb1.png",
-"versionDescription": "Xóa bản gốc của Appstore trước khi cài Facebook Wolf",
-"localizedDescription": "Xóa bản gốc của Appstore trước khi cài Facebook Wolf",
+"versionDescription": "Xóa bản gốc của Appstore trước khi cài Facebook Wolf\n\nP/s:\nNếu có lỗi hãy ib Telegram ad: @kingsmanvn07",
+"localizedDescription": "Xóa bản gốc của Appstore trước khi cài Facebook Wolf\n\nP/s:\nNếu có lỗi hãy ib Telegram ad: @kingsmanvn07",
 "size": 132361748},
 
 {"name": "Facebook Meta 2",
@@ -70,7 +70,7 @@
 {"name": "Instagram",
 "bundleIdentifier": "com.burbn.instagram",
 "version": "229.0",
-"downloadURL": "https://dl.dropboxusercontent.com/s/j6lh1dcjt4d14yc/RocketforInstagram.ipa?dl=0",
+"downloadURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/Instagram_Meta_229.0_1654134710.ipa",
 "iconURL": "https://kingsmanvn.cf/Image/RocketforInstagram/instagram.png",
 "versionDescription": "Xóa bản gốc của Appstore trước khi cài Rocket for Instagram",
 "localizedDescription": "Xóa bản gốc của Appstore trước khi cài Rocket for Instagram",
@@ -79,7 +79,7 @@
 {"name": "Instagram 2",
 "bundleIdentifier": "com.burbn.instagram.Kingsmanvn",
 "version": "229.0",
-"downloadURL": "https://dl.dropboxusercontent.com/s/j6lh1dcjt4d14yc/RocketforInstagram.ipa?dl=0",
+"downloadURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/Instagram_Meta_2_229.0_1654134551.ipa",
 "iconURL": "https://kingsmanvn.cf/Image/RocketforInstagram/instagram.png",
 "versionDescription": "Bản Rocket for Instagram có thể chạy song song (đang lỗi)",
 "localizedDescription": "Bản Rocket for Instagram có thể chạy song song (đang lỗi)",
@@ -179,8 +179,16 @@
 "version": "1.0.9",
 "downloadURL": "https://dl.dropboxusercontent.com/s/bi49qofyurf8f5o/Gunfire%20Reborn%20v1.0.9.ipa?dl=0",
 "iconURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/gunfirereborn.png",
-"versionDescription": "Gunfire Reborn v1.0.9\n\nP/s:\nNếu có lỗi hãy ib Telegram của admin: @kingsmanvn07",
-"localizedDescription": "Gunfire Reborn v1.0.9\n\nP/s:\nNếu có lỗi hãy ib Telegram của admin: @kingsmanvn07",
-"size": 10307921510}
+"versionDescription": "Gunfire Reborn v1.0.9",
+"localizedDescription": "Gunfire Reborn v1.0.9",
+"size": 10307921510},
+
+{"name": "FIFA Mobile",
+"version": "16.0.0.01",
+"downloadURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/FIFAMobile_16.0.01.ipa",
+"iconURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/fifamobile.png",
+"versionDescription": "FIFA Mobile",
+"localizedDescription": "FIFA Mobile",
+"size": 99992207}
 	]
 }
