@@ -1,1 +1,0 @@
-vmess = 104.208.106.196:80, method=chacha20-ietf-poly1305, password=6c8c2636-3c08-4d40-d2af-d4fc46b75482, obfs=ws, obfs-host=viettel.akamaized.net, obfs-uri=/, fast-open=true, udp-relay=true, aead=false, tag=🇭🇰BEO VPS HK 01
