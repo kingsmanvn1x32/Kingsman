@@ -300,5 +300,39 @@
 "tintColor": "018084",
 "size": 42100326}
 
+
+{"name": "Mondly",
+"developerName": "Kingsmanvn",
+"version": "9.8.1",
+"versionDate": "2022-06-04T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/Mondly_9.8.1.ipa",
+"iconURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/.png",
+"versionDescription": "Mondly Premium học ngôn ngữ khác",
+"localizedDescription": "Mondly Premium học ngôn ngữ khác",
+"tintColor": "018084",
+"size": 45822771},
+
+{"name": "Luma’s Fusion",
+"developerName": "Kingsmanvn",
+"version": "3.0.8",
+"versionDate": "2022-06-04T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/Luma.Fusion_3.0.8.ipa",
+"iconURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/.png",
+"versionDescription": "Luma’s Fusion",
+"localizedDescription": "Luma’s Fusion",
+"tintColor": "018084",
+"size": 139460608},
+
+{"name": "Playdead’s LIMBO",
+"developerName": "Kingsmanvn",
+"version": "1.1.2",
+"versionDate": "2022-06-04T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/Playdead.LIMBO_1.2.2.ipa",
+"iconURL": "https://gitlab.com/kingsmanvn/KingsmanvnStore/-/raw/main/.png",
+"versionDescription": "Playdead’s LIMBO",
+"localizedDescription": "Playdead’s LIMBO",
+"tintColor": "018084",
+"size": 142606336}
+
 	]
 }
