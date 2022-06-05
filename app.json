@@ -355,14 +355,14 @@
 "tintColor": "018084",
 "size": 54693724},
 
-{"name": "AdGuard Pro",
+{"name": "AdGuard Pro (Test)",
 "developerName": "Kingsmanvn",
 "version": "4.4.0",
 "versionDate": "2022-06-05T11:12:02+07:00",
 "downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/AdGuardPro_4.4.0.ipa",
 "iconURL": "https://kingsmanvn.cf/Image/adguardpro.png",
-"versionDescription": "Trình chặn quảng cáo trên Safari\n\nAdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\nXóa bản gốc của Appstore trước khi cài AdGuard Pro\nIPA ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
-"localizedDescription": "Trình chặn quảng cáo trên Safari\n\nAdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\nXóa bản gốc của Appstore trước khi cài AdGuard Pro\nIPA ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
+"versionDescription": "Trình chặn quảng cáo trên Safari\n\nAdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\nXóa bản gốc của Appstore trước khi cài AdGuard Pro (Test)\nIPA hiện đang ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
+"localizedDescription": "Trình chặn quảng cáo trên Safari\n\nAdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\nXóa bản gốc của Appstore trước khi cài AdGuard Pro (Test)\nIPA hiện đang ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
 "tintColor": "018084",
 "size": 28972154},
 
