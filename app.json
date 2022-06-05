@@ -331,7 +331,29 @@
 "versionDescription": "Playdead’s LIMBO",
 "localizedDescription": "Playdead’s LIMBO",
 "tintColor": "018084",
-"size": 142606336}
+"size": 142606336},
+
+{"name": "DSLR Camera",
+"developerName": "Kingsmanvn",
+"version": "9.1.1",
+"versionDate": "2022-06-05T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/DSLRCamera_9.1.1_1636289094.ipa",
+"iconURL": "https://kingsmanvn.cf/Image/dslrcamera.png",
+"versionDescription": "DSLR Camera",
+"localizedDescription": "DSLR Camera",
+"tintColor": "018084",
+"size": 189876142},
+
+{"name": "ProCratePocket",
+"developerName": "Kingsmanvn",
+"version": "4.0.4",
+"versionDate": "2022-06-05T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/ProCratePocket_4.0.4.ipa",
+"iconURL": "https://kingsmanvn.cf/Image/procratepocket.png",
+"versionDescription": "ProCratePocket",
+"localizedDescription": "ProCratePocket",
+"tintColor": "018084",
+"size": 299158732}
 
 	]
 }
