@@ -333,17 +333,6 @@
 "tintColor": "018084",
 "size": 142606336},
 
-{"name": "DSLR Camera",
-"developerName": "Kingsmanvn",
-"version": "9.1.1",
-"versionDate": "2022-06-05T11:12:02+07:00",
-"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/DSLRCamera_9.1.1_1636289094.ipa",
-"iconURL": "https://kingsmanvn.cf/Image/dslrcamera.png",
-"versionDescription": "DSLR Camera",
-"localizedDescription": "DSLR Camera",
-"tintColor": "018084",
-"size": 189876142},
-
 {"name": "ProCratePocket",
 "developerName": "Kingsmanvn",
 "version": "4.0.4",
@@ -375,7 +364,18 @@
 "versionDescription": "Trình chặn quảng cáo trên Safari\n\nAdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\nXóa bản gốc của Appstore trước khi cài AdGuard Pro\nIPA ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
 "localizedDescription": "Trình chặn quảng cáo trên Safari\n\nAdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\nXóa bản gốc của Appstore trước khi cài AdGuard Pro\nIPA ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
 "tintColor": "018084",
-"size": 28972154}
+"size": 28972154},
+
+{"name": "DSLR Camera",
+"developerName": "Kingsmanvn",
+"version": "9.1.1",
+"versionDate": "2022-06-05T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/DSLRCamera_9.1.1_1636289094.ipa",
+"iconURL": "https://kingsmanvn.cf/Image/dslrcamera.png",
+"versionDescription": "DSLR Camera",
+"localizedDescription": "DSLR Camera",
+"tintColor": "018084",
+"size": 189876142}
 
 	]
 }
