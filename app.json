@@ -375,7 +375,18 @@
 "versionDescription": "Trình chặn quảng cáo trên Safari\n\nThêm AdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\n• Xóa bản gốc của Appstore trước khi cài AdGuard Pro\n• AdGuard Pro hiện đang ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
 "localizedDescription": "Trình chặn quảng cáo trên Safari\n\nThêm AdGuard Pro DNS:\nhttps://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig\n\nP/s:\n• Xóa bản gốc của Appstore trước khi cài\n• AdGuard Pro hiện đang ở giai đoạn thử nghiệm nên có thể sẽ lỗi",
 "tintColor": "018084",
-"size": 28972154}
+"size": 28972154},
+
+{"name": "Facebook lite",
+"developerName": "Kingsmanvn",
+"version": "",
+"versionDate": "2022-06-06T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/Fb.lite.ipa",
+"iconURL": "https://kingsmanvn.cf/Image/fblite.png",
+"versionDescription": "Facebook lite cho hacker lỏ",
+"localizedDescription": "Facebook lite cho hacker lỏ",
+"tintColor": "018084",
+"size": 11744051}
 
 	]
 }
