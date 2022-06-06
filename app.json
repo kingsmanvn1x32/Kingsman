@@ -386,7 +386,18 @@
 "versionDescription": "Facebook lite cho hacker lỏ",
 "localizedDescription": "Facebook lite cho hacker lỏ",
 "tintColor": "018084",
-"size": 11744051}
+"size": 11744051},
+
+{"name": "Douyin",
+"developerName": "Kingsmanvn",
+"version": "16.0.1",
+"versionDate": "2022-06-06T11:12:02+07:00",
+"downloadURL": "https://dl.dropboxusercontent.com/s/ggiaaff4vvvpbur/DouyinNoWatermark_16.0.1.ipa?dl=0",
+"iconURL": "https://kingsmanvn.cf/Image/TikTok/tiktok.png",
+"versionDescription": "Douyin No Watermark",
+"localizedDescription": "Douyin No Watermark",
+"tintColor": "018084",
+"size": 282905804}
 
 	]
 }
