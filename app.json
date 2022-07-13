@@ -399,5 +399,19 @@
 "tintColor": "018084",
 "size": 282905804}
 
+
+{"name": "Pro Cam",
+"developerName": "Kingsmanvn",
+"version": "13.6.6",
+"versionDate": "2022-07-13T11:12:02+07:00",
+"downloadURL": "https://github.com/kingsman9413/Kingsman/releases/download/IPA/ProCam.13.6.6.ipa",
+"iconURL": "https://kingsmanvn.cf/Image/procam.png",
+"versionDescription": "Pro Cam",
+"localizedDescription": "Pro Cam",
+"tintColor": "018084",
+"size": 12792627.2}
+
+
+
 	]
 }
