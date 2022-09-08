@@ -1,0 +1,2 @@
+HOST-SUFFIX,ocsp.apple.com,REJECT
+HOST-SUFFIX,ocsp2.apple.com,REJECT
