@@ -17422,4 +17422,4 @@ domain:wa.appsflyer.com,
 domain:websdk.appsflyer.com,
 domain:js.wpnjs.com,
 domain:js.wpnsrv.com,
-domain:js.wpncdn.com
+domain:js.wpncdn.com,
