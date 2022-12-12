@@ -1,0 +1,331 @@
+port: 7890
+socks-port: 7891
+authentication:
+  - "kingsmanvn:kingsmanvn"
+tcp-concurrent: true
+allow-lan: true
+bind-address: '*'
+mode: rule
+ipv6: true
+log-level: debug
+external-controller: 127.0.0.1:9090
+external-controller-tls: 127.0.0.1:9443
+secret: "kingsmanvn"  # `Authorization: Bearer ${secret}`
+clash-meta-for-android:
+  append-system-dns: true
+profile:
+  store-selected: false
+  store-fake-ip: true
+experimental:
+  fingerprint:
+    - "CF:43:38:95:1B:A0:9B:9A:68:9F:7E:55:63:1B:E9:99:FE:B2:CA:9F:9E:F6:91:02:3F:DE:FA:87:72:A3:E6:BE"
+  ignore-resolve-fail: true
+  sniff-tls-sni: false
+sniffer:
+  enable: false
+dns:
+  enable: true
+  #listen: 127.0.0.1:1053
+  prefer-h3: true
+  ipv6: true
+  use-hosts: true
+  default-nameserver:
+    - 9.9.9.11
+    - 8.8.8.8
+    - 1.1.1.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+  nameserver:
+    #- 'localhost:11053#KINGSMANVN&h3=true'
+    #- quic://82b37b.dns.nextdns.io:8853
+    - 'https://doh3.dns.nextdns.io/82b37b/kingsmanvn%20clash%20meta#KINGSMANVN&h3=true'
+    #- tls://kingsmanvn--clash--meta-82b37b.dns.nextdns.io:8853
+    #- dhcp://system
+  proxy-server-nameserver:
+    #- 'localhost:11053#KINGSMANVN&h3=true'
+    #- quic://kingsmanvn--clash--meta-82b37b.dns.nextdns.io:8853
+    - 'https://doh3.dns.nextdns.io/82b37b/kingsmanvn%20clash%20meta#KINGSMANVN&h3=true'
+    #- tls://kingsmanvn--clash--meta-82b37b.dns.nextdns.io:8853
+    #- dhcp://system
+  fallback:
+    #- 'localhost:11053#KINGSMANVN&h3=true'
+    #- quic://82b37b.dns.nextdns.io:8853
+    - 'https://doh3.dns.nextdns.io/82b37b/kingsmanvn%20clash%20meta#KINGSMANVN&h3=true'
+    #- tls://kingsmanvn--clash--meta-82b37b.dns.nextdns.io:8853
+    #- dhcp://system
+  fallback-filter:
+    geoip: true
+    ipcidr: 
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - 'any:53'
+  auto-route: true
+  auto-detect-interface: true
+  strict_route: true
+  inet4_route_address:
+    - 0.0.0.0/1
+    - 128.0.0.0/1
+  inet6_route_address:
+    - "::/1"
+    - "8000::/1"
+  # endpoint_independent_nat: false
+  exclude_package:
+    - com.frostnerd.smokescreen
+proxies:
+  - name: '🇭🇰 Surfshark HK HKG WireGuard'
+    type: wireguard
+    server: hk-hkg.prod.surfshark.com
+    port: 51820
+    ip: 10.14.0.2/16
+    # ipv6: your_ipv6
+    private-key: qNPS9srZSaKg6idFrOxEBXmsvdCg/E+1u3xJZM4b/Gc=
+    public-key: JYHdktdtuM7inbtsxRKSDpnBVTWQ5+QLZ/cWWmf4VRg=
+    udp: true
+    dns: [162.252.172.57, 149.154.159.92]
+  - name: '🇸🇬 Surfshark SG SNG WireGuard'
+    type: wireguard
+    server: sg-sng.prod.surfshark.com
+    port: 51820
+    ip: 10.14.0.2/16
+    # ipv6: your_ipv6
+    private-key: qNPS9srZSaKg6idFrOxEBXmsvdCg/E+1u3xJZM4b/Gc=
+    public-key: MGfgkhJsMVMTO33h1wr76+z6gQr/93VcGdClfbaPsnU=
+    udp: true
+    dns: [162.252.172.57, 149.154.159.92]
+  #- name: ADGUARD
+    #type: http
+    #server: 127.0.0.1
+    #port: 9000
+  #- name: '🇸🇬 SG snell'
+    #type: snell
+    #server: 18.140.69.141
+    #port: 443
+    #psk: kingsmanvn
+    #version: 3
+    #udp: true
+    #obfs-opts:
+      #mode: tls
+      #host: dl.kgvn.garenanow.com
+    #health-check:
+      #enable: true
+      #interval: 420
+      #url: http://www.gstatic.com/generate_204
+d: &d
+  type: http
+  url: "http://yunavpn.com/api/v1/client/subscribe?token=27d0d148c9795a28b0c788dd451bf677"
+  interval: 3600
+  path: ./proxyset/yuna.yaml
+  health-check:
+    enable: true
+    interval: 600
+    url: http://dns.nextdns.io/generate_204
+proxy-providers:
+  yuna:
+    <<: *d
+    filter: '^(?=.*)((?!(TADMIN|TIKTOK)).)*$'
+    #filter: ^(.*)(GADMIN|GARENA)+(.*)$
+    
+proxy-groups:
+  - name: KINGSMANVN
+    type: select
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    proxies:
+      - '♻️TỰ ĐỘNG CHỌN SERVER PING NGON NHẤT'
+      - '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER ỔN ĐỊNH NHẤT'
+      - '♻️TỰ ĐỘNG CHỌN SERVER VN PING NGON NHẤT'
+      - '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER VN ỔN ĐỊNH NHẤT'
+      - '♻️TỰ ĐỘNG CHỌN SERVER SG PING NGON NHẤT'
+      - '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER SG ỔN ĐỊNH NHẤT'
+      - '♻️TỰ ĐỘNG CHỌN SERVER SURFSHARK PING NGON NHẤT'
+      - '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER SURFSHARK ỔN ĐỊNH NHẤT'
+      - '🇭🇰 Surfshark HK HKG WireGuard'
+      - '🇸🇬 Surfshark SG SNG WireGuard'
+      #- '🇸🇬 SG snell'
+  #- name: HACK5G
+    #type: relay
+    #proxies:
+      #- KINGSMANVN
+      #- ADGUARD
+  - name: '♻️TỰ ĐỘNG CHỌN SERVER SURFSHARK PING NGON NHẤT'
+    type: url-test
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    proxies:
+      - '🇭🇰 Surfshark HK HKG WireGuard'
+      - '🇸🇬 Surfshark SG SNG WireGuard'
+    filter: '^(?=.*(Surfshark).)*$'
+  - name: '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER SURFSHARK ỔN ĐỊNH NHẤT'
+    type: fallback
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    proxies:
+      - '🇭🇰 Surfshark HK HKG WireGuard'
+      - '🇸🇬 Surfshark SG SNG WireGuard'
+    filter: '^(?=.*(Surfshark))+(.*)$'
+  - name: '♻️TỰ ĐỘNG CHỌN SERVER PING NGON NHẤT'
+    type: url-test
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    proxies:
+      #- '🇸🇬 SG snell'
+  - name: '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER ỔN ĐỊNH NHẤT'
+    type: fallback
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    proxies:
+      #- '🇸🇬 SG snell'
+  - name: '♻️TỰ ĐỘNG CHỌN SERVER VN PING NGON NHẤT'
+    type: url-test
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http:/dns.nextdns.io/generate_204
+    use:
+      - yuna
+    filter: '^(?=.*(🇻🇳|VN|HN|HCM)).*((?!(Surfshark)).)*$'
+  - name: '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER VN ỔN ĐỊNH NHẤT'
+    type: fallback
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    filter: '^(?=.*(🇻🇳|VN|HN|HCM)).*((?!(Surfshark)).)*$'
+  - name: '♻️TỰ ĐỘNG CHỌN SERVER SG PING NGON NHẤT'
+    type: url-test
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    filter: '^(?=.*(🇸🇬|新|狮|獅|SG|Singapore|SINGAPORE)).*((?!(Surfshark)).)*$'
+  - name: '🔯TỰ ĐỘNG CHUYỂN ĐỔI SERVER SG ỔN ĐỊNH NHẤT'
+    type: fallback
+    url: http://dns.nextdns.io/generate_204
+    interval: 420
+    health-check:
+      enable: true
+      interval: 420
+      url: http://dns.nextdns.io/generate_204
+    use:
+      - yuna
+    filter: '^(?=.*(🇸🇬|新|狮|獅|SG|Singapore|SINGAPORE)).*((?!(Surfshark)).)*$'
+rule-providers:
+  hostsvn:
+    behavior: "domain"
+    type: http
+    url: "https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-clash-rule.yaml"
+    interval: 72240
+    path: ./ruleset/hostsvn.yaml
+  rejectfile:
+    type: http
+    behavior: "domain"
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+    path: ./ruleset/rejectfile.yaml
+    interval: 86400
+rules:
+  - RULE-SET,hostsvn,REJECT
+  - RULE-SET,rejectfile,REJECT
+  - DOMAIN,www.googleadservices.com,REJECT
+  - DOMAIN,googleads.g.doubleclick.net,REJECT
+  - IP-CIDR,0.0.0.0/32,REJECT,no-resolve
+  #- IP-CDIR6,::/128,REJECT,no-resolve
+  - MATCH,KINGSMANVN
+
+tls:
+  certificate:
+    -----BEGIN CERTIFICATE-----
+    MIID5zCCAs+gAwIBAgIUafWuuBx310yti0G7jbb/OI1MkRAwDQYJKoZIhvcNAQEL
+    BQAwgYIxCzAJBgNVBAYTAlZOMQ8wDQYDVQQIDAZIQSBOT0kxDzANBgNVBAcMBkhB
+    IE5PSTETMBEGA1UECgwKa2luZ3NtYW52bjEXMBUGA1UEAwwOa2luZ3NtYW52bi54
+    eXoxIzAhBgkqhkiG9w0BCQEWFGFkbWluLmtpbmdzbWFudm4ueHl6MB4XDTIyMTIx
+    MTAzMDQ1NFoXDTI1MDkzMDAzMDQ1NFowgYIxCzAJBgNVBAYTAlZOMQ8wDQYDVQQI
+    DAZIQSBOT0kxDzANBgNVBAcMBkhBIE5PSTETMBEGA1UECgwKa2luZ3NtYW52bjEX
+    MBUGA1UEAwwOa2luZ3NtYW52bi54eXoxIzAhBgkqhkiG9w0BCQEWFGFkbWluLmtp
+    bmdzbWFudm4ueHl6MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7smk
+    iUOK3w0YBYA5Tjr1tDXWAvOrjeIRPFJVw3PQHajsXMVNXRIjc0ZBud+xFkMbANvC
+    PlEZs9O3BRGvQGuDMLGpTPeJLknREnrN0GWzQzaIEPCqfVHShiw6kJYSWw1MR9xn
+    B1M2qcSTWLHXbJT/ldWtAjmlIgOY6n3HxpLhy20pyi7hkNPYqfBW0RLLf9AY85Ey
+    KaKQv50PeYgigQTcpoqvDWzNNML6ZfCVxNmM/IQkuAJrN9snm78N+pqgfRqzsD9g
+    DIkRnYdvrBdJUxRCLWUJKkV7evcVm7pLEWQhHSIdjIE2px6itjnjMff0RB7mzgN8
+    kX3N2LmSGW22nXT2gwIDAQABo1MwUTAdBgNVHQ4EFgQUM8zrna0/OF+DgHR23zUJ
+    03AFTu8wHwYDVR0jBBgwFoAUM8zrna0/OF+DgHR23zUJ03AFTu8wDwYDVR0TAQH/
+    BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAV6UZ9lCpy546sItIE82sz+1C/co+
+    9OlMTN/CJLT8jRJhToAMo0CSKLk98XTuy/VqW0yGFHqGyPVCyyiQHLGyREmI6PVy
+    nuLw3JxdHR9aRD+L9NZIjzm1tbgtbcuQm3WlFUHqYpiHArJu8tWso0/eF9UuXYRL
+    In2Lm2UYuBg+IGqDhTx1wl3S0HXU2nJOj8MJLicN3ScuOfq8Sj+uZ0yVeGIQQiGI
+    s00jUuxPaMaZC8uJJpE1FxO5fZuBiRA40vuVu6K0KNaixjam2NwyZPfZEWv7RZxk
+    AZK+2K1UJoaRb7v+RZqqocHEFky67ZDvPON3babMr6L88umFmy1WAAfFYQ==
+    -----END CERTIFICATE-----
+  private-key:
+    -----BEGIN PRIVATE KEY-----
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDuyaSJQ4rfDRgF
+    gDlOOvW0NdYC86uN4hE8UlXDc9AdqOxcxU1dEiNzRkG537EWQxsA28I+URmz07cF
+    Ea9Aa4MwsalM94kuSdESes3QZbNDNogQ8Kp9UdKGLDqQlhJbDUxH3GcHUzapxJNY
+    sddslP+V1a0COaUiA5jqfcfGkuHLbSnKLuGQ09ip8FbREst/0BjzkTIpopC/nQ95
+    iCKBBNymiq8NbM00wvpl8JXE2Yz8hCS4Ams32yebvw36mqB9GrOwP2AMiRGdh2+s
+    F0lTFEItZQkqRXt69xWbuksRZCEdIh2MgTanHqK2OeMx9/REHubOA3yRfc3YuZIZ
+    bbaddPaDAgMBAAECggEAFCHRPhCavomARl50KZtUKD7UIOjIXiyUK9P8dRkbj8fN
+    /b678gyoca/K6AMeQnRv7DE0l3c6koW9pXv2aZkAgfRInaIB4XKWlPDgaO4m7S2S
+    aGzSAvTWEG5EL19OHUa2veXgLdofMefOTUKl/5QxJEHUPB7K3ffg3/99mC+9p7fa
+    6gL+kHeusHtwFlZ1+Hh/b4eHNHxNbWgoroOKLzDbTS3c0wqh6izU4YdToPb3iAx0
+    dX9WmyZu5sjjlf6rAZWaILa5F0XFCfB2gMGkesWviOXv8/OhSAZjk+i7Doh/0E4M
+    C3hvgHT/n0jxTq6ufnZ7B2rjkzI6i24sg3QwyT8PWQKBgQDxYVuIPEyeJS7jvdtv
+    dbGyrf4Zpn8oh7gIWSLVY6menJpMpwN8GbA7WaDvH7q0F9eaF3JSXveFCOcVoxg8
+    Jv/9o5+zE9MQLI1bGBqo4uwonlQCzz76MM8wd8/0cmr8H66H75ds/s6KaNIVc4+u
+    HZ9i+q5d6aZF0kc9pcfJ4mTCTQKBgQD9QBX+RtSaqtWRbF6kw7zw4DP2MtKEMC+L
+    FaL0YkI6c3vZ69MtUad6HjHaPqnKeWOxtJQFa8R4WKR4KEIL9hPLFBSr9jJtpekX
+    4p+GzC6NsbD6L07MlcZbn7ek3zWQLrCWOBU6utTgluqppoAzYSLr/iDIt06koKQ9
+    owf6lQXkDwKBgQDV5Zsx95VBktuhTs3UUGw+VTbVzhfid5oaM7rNc7qMZmPJRzqs
+    Tys+/KbDH8/X5UTWNK7G1Ybrqb71CojgTQMN5WAQVaH0NDazIYIGZMg3Gk6CCtrY
+    5EXFwnZSPM4XS4/iv+rk2Et4lXiNL9GDzpY+JLw9Vl5UgwlEVNLdULRPBQKBgQDI
+    cBZ4IFtY5ukNpjXqNjmuc+TscSEJGpImhMNqpPJCDPDzc6C6d6wUDR3r3DjKVfU/
+    yup0t+zSS2Yw67wKd4MG8ifCSqNzASNRkj4slCIsZ3zpJtQ5PDm4ftr8lOVx7mI5
+    Ir46s3CVKR0llPBWugTHv2T3N4344mPbnNNN0vDMpQKBgEy8l/hWBE9yKvXKy+9A
+    HyqZ7LxbKj7EGh6qRmRwAlsS7MrLLGfYle4B7OErZ6AlxeM3Wls2hMe7yHEt3q2N
+    lvkTja9sfotdseIZf0SWnJW9T9aWD7eM8yJ1hF3vEesPcIAr9fpsDF9Wjhi4PDNu
+    OoL6Pi/RPCCfYbugTa8A0A24
+    -----END PRIVATE KEY-----
